@@ -1,0 +1,387 @@
+#mainBottom{
+    display:flex;
+    flex-direction:column-reverse;
+
+}
+
+#decoration{
+    position: absolute;
+    right: 0px;
+}
+
+body{
+    font-family:'Spectral', serif;
+    margin: 0 0;
+}
+
+header{
+    width: 100%;
+}
+
+h1{
+    font-size: 4.0rem;
+    color: black;
+}
+
+header p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+}
+
+header button{
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    color: white;
+    background-color: black;
+    padding: 5px 40px;
+    border-radius: 2em;
+}
+
+#titleBar{
+    display:  -webkit-flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    background-color: #ffc017;
+    align-items: start;
+    width:100%;
+   height: 500px;
+   border-bottom: 1px solid black;
+}
+
+#titleBar > *{
+    margin-left: 30px;
+}
+
+
+
+#topBar{
+    background-color: #ffc017;
+    display:  -webkit-flex;
+    justify-content: space-between;
+    align-items: center;
+    position:fixed;
+    top: 0px;
+    left: 0px;
+    z-index: 2;
+    width: 100vw;
+    border-bottom: 1px solid black;
+}
+
+#topBar nav ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style-type: none;
+}
+
+#topBar nav ul li{
+    font-size: 0.8rem;
+    margin-left: 8px;
+    padding: 5px 15px;
+   
+}
+
+#topBar img{
+    margin-left: 8px;
+}
+
+#topBar nav{
+    margin-right: 8px;
+}
+
+
+.last{
+    background-color: black;
+    border-radius: 2em;
+    color:white;
+}
+
+svg{
+    display: none;
+}
+
+.desktop{
+    display: none;
+}
+
+#trending > .title{
+    display: flex;
+    align-items: center;
+}
+
+#trendContainer{
+    display: flex;
+    flex-direction: column;
+    
+    align-content: start;
+    border-bottom: 1px solid lightgrey;
+}
+
+#trendContainer > div{
+    display: flex;
+    align-items: start;
+    margin: 15px 8px;
+}
+
+#trendContainer > div img{
+    border-radius: 2em;
+    height: 25px;
+    margin-right: 10px;
+}
+
+#trendContainer > div > h2{
+    margin-top: 0px;
+    align-self: start;
+    font-size: 1.7rem;
+    color: rgb(180,180,180);
+}
+
+#trendContainer > div > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+#trendContainer > div > div > div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-left: 10px;
+}
+
+
+
+#trendContainer h6{
+    font-size: 0.8rem;
+    margin: 0px 5px;
+}
+
+#trendContainer h5{
+    font-size: 1.1rem;
+    margin: 0px 5px;
+}
+
+#trendContainer p{
+    font-size: 0.6rem;
+}
+
+main ul{
+    list-style-type: none;
+}
+
+#sideTop{
+    border-bottom: 1px solid lightgrey;
+}
+
+#sideTop ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sideTop ul li{
+    background-color: lightgray;
+    border-radius: 0.4em;
+    border: 1px solid black;
+    padding: 8px 20px;
+    margin: 5px 5px;
+    font-size: 0.6rem;
+}
+
+#sideBottom ul{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#sideBottom ul li{
+    font-size: 0.6rem;
+    margin-left: 15px;
+}
+
+#mainBottom{
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+#mainBottom aside h2{
+    font-size: 1.2rem;
+    margin-left: 15px;
+}
+
+#lista{
+    display: flex;
+    flex-direction: column;
+}
+
+#lista > div{
+    display: flex;
+    flex-direction: row;
+    margin: 8px 0px;
+}
+
+#lista > div > div{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    margin: 0px 5px;
+}
+
+#lista > div > img{
+    width: auto;
+    height: 130px;
+    margin: 0px 5px;
+}
+
+#lista > div p{
+ 
+    font-size: 0.8rem;
+}
+
+#lista button{
+    font-size: 0.6rem;
+}
+
+.name{
+    display: flex;
+    flex-direction: row;
+}
+
+.name img{
+    height: 18px;
+    width: auto;
+    border-radius: 2em;
+}
+
+.name h5{
+    margin: 0px 5px;
+}
+
+.time{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    position: relative;
+}
+
+.time img{
+    width: 18px;
+    height: auto;
+}
+
+.bookmark{
+    position: absolute;
+    float: right;
+    right: 2px;
+}
+
+#lista > div{
+    width: 100%;
+}
+
+@media screen and (min-width: 1200px){
+    .desktop{
+        display: block;
+    }
+
+    #lista > div p{
+ 
+        font-size: 1.1rem;
+    }
+    
+    #lista button{
+        font-size: 0.9rem;
+    }
+
+    #mainBottom aside h2{
+        font-size: 1.4rem;
+        
+    }
+    #sideBottom ul li{
+        font-size: 0.8rem;
+        
+    }
+
+    #sideTop ul li{
+        font-size: 0.8rem;
+    }
+
+    #trendContainer > div > h2{
+    font-size: 1.9rem;
+}
+
+#trendContainer h6{
+    font-size: 1.0rem;
+   
+}
+
+#trendContainer h5{
+    font-size: 1.1rem;
+   
+}
+
+#trendContainer p{
+    font-size: 0.8rem;
+}
+
+#topBar nav ul li{
+    font-size: 1.0rem;
+
+}
+
+header button{
+  
+    font-size: 1.4rem;
+}
+
+h1{
+    font-size: 4.2rem;
+  
+}
+
+header p{
+    
+    font-size: 1.4rem;
+}
+
+#lista{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+
+
+#mainBottom{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+}
+
+#trendContainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: space-evenly;
+}
+
+.name img{
+    height: 28px;
+    width: auto;
+    border-radius: 2em;
+}
+
+.time img{
+    width: 28px;
+    height: auto;
+}
+
+#lista{
+    max-width: 60%;
+}
+
+svg{
+    display: block;
+}
+}
