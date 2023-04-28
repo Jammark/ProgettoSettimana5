@@ -32,9 +32,11 @@ header button{
     font-family: 'Roboto', sans-serif;
     font-size: 1.2rem;
     color: white;
-    background-color: black;
-    padding: 5px 40px;
+    background-color: #191919;
+    padding: 10px 40px;
     border-radius: 2em;
+    border: none;
+    cursor:pointer;
 }
 
 #titleBar{
@@ -66,6 +68,7 @@ header button{
     z-index: 2;
     width: 100vw;
     border-bottom: 1px solid black;
+    transition: background-color 1s linear;
 }
 
 #topBar nav ul{
@@ -79,7 +82,7 @@ header button{
     font-size: 0.8rem;
     margin-left: 8px;
     padding: 5px 15px;
-   
+   cursor:pointer;
 }
 
 #topBar img{
@@ -92,9 +95,10 @@ header button{
 
 
 .last{
-    background-color: black;
+    background-color: #191919;
     border-radius: 2em;
     color:white;
+    transition: background-color 1s linear;
 }
 
 svg{
@@ -108,6 +112,7 @@ svg{
 #trending > .title{
     display: flex;
     align-items: center;
+    padding-left: 40px;
 }
 
 #trendContainer{
@@ -116,12 +121,14 @@ svg{
     
     align-content: start;
     border-bottom: 1px solid lightgrey;
+    padding: 20px 0px;
 }
 
 #trendContainer > div{
     display: flex;
     align-items: start;
     margin: 15px 8px;
+    
 }
 
 #trendContainer > div img{
@@ -134,7 +141,10 @@ svg{
     margin-top: 0px;
     align-self: start;
     font-size: 1.7rem;
-    color: rgb(180,180,180);
+    color: rgb(200,200,200,0.6);
+    font-weight: 600;
+    font-family: 'Roboto', sans-serif;
+    margin-right: 10px;
 }
 
 #trendContainer > div > div{
@@ -147,19 +157,21 @@ svg{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding-left: 10px;
+  
 }
 
 
 
 #trendContainer h6{
-    font-size: 0.8rem;
+    font-size: 0.6rem;
     margin: 0px 5px;
 }
 
 #trendContainer h5{
     font-size: 1.1rem;
-    margin: 0px 5px;
+    margin: 2px 0px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
 }
 
 #trendContainer p{
@@ -180,12 +192,21 @@ main ul{
 }
 
 #sideTop ul li{
-    background-color: lightgray;
+    background-color: white;
     border-radius: 0.4em;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     padding: 8px 20px;
     margin: 5px 5px;
     font-size: 0.6rem;
+    color: gray;
+    transition: all 500ms linear 200ms;
+    cursor:pointer;
+}
+
+#sideTop ul li:hover{
+    background-color: #1a8917;
+    transform: scale(1.3);
+    color: white;
 }
 
 #sideBottom ul{
@@ -196,11 +217,14 @@ main ul{
 #sideBottom ul li{
     font-size: 0.6rem;
     margin-left: 15px;
+    color: gray;
+    cursor:pointer;
 }
 
 #mainBottom{
     display: flex;
     flex-direction: column-reverse;
+    margin: 4px 20px;
 }
 
 #mainBottom aside h2{
@@ -217,7 +241,7 @@ main ul{
 #lista > div{
     display: flex;
     flex-direction: row;
-    margin: 8px 0px;
+    margin: 28px 0px;
 }
 
 #lista > div > div{
@@ -234,8 +258,13 @@ main ul{
 }
 
 #lista > div p{
- 
+    margin: 4px 6px;
     font-size: 0.8rem;
+}
+
+#lista > div h4{
+    margin: 4px 6px;
+    font-size: 1.1rem;
 }
 
 #lista button{
@@ -245,6 +274,7 @@ main ul{
 .name{
     display: flex;
     flex-direction: row;
+    align-items: center;
 }
 
 .name img{
@@ -269,10 +299,20 @@ main ul{
     height: auto;
 }
 
+.time button{
+    cursor:pointer;
+    background-color: rgba(200,200,200,0.2);
+    border-radius: 2em;
+    color: gray;
+    border: none;
+    padding: 3px 8px;
+}
+
 .bookmark{
     position: absolute;
     float: right;
     right: 2px;
+    cursor: pointer;
 }
 
 #lista > div{
@@ -311,7 +351,7 @@ main ul{
 }
 
 #trendContainer h6{
-    font-size: 1.0rem;
+    font-size: 0.8rem;
    
 }
 
@@ -359,6 +399,10 @@ header p{
     align-items: start;
 }
 
+#trendContainer > div{
+    flex-basis: 32%;
+}
+
 #trendContainer{
     display: flex;
     flex-direction: row;
@@ -385,4 +429,21 @@ header p{
 svg{
     display: block;
 }
+
+#lista > div h4{
+    font-size: 1.4rem;
+}
+}
+
+.last.green{
+    background-color: #1a8917;
+    color: #191919;
+}
+
+#topBar.white{
+    background-color: white;
+}
+
+.op{
+    opacity:0;
 }
