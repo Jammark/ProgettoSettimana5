@@ -211,6 +211,7 @@ main ul{
 #lista{
     display: flex;
     flex-direction: column;
+    margin: 10px 15px;
 }
 
 #lista > div{
